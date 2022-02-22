@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+}
+
+.header__professional-imagen-container{
+    display: flex;
+    max-width: 170px;
+    margin: 0 auto;
+}
+
+.header__professional-imagen{
+    width: 100%;
+    border-radius: 50%;
+}
