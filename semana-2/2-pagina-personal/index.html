@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paula Andrea Yong Zea</title>
+    <link rel="shortcut icon" href="./img/pagina__personal-ico.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">
+                <img src="./img/paula__foto.jpg" alt="foto de paula" width="64px" />
+            </a>
+            <ul>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Experiencia</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div>
+                <h1>Paula Yong. Desarrolladora Full Stack.</h1>
+                <p1>
+                    Estudiante de Tecsup, con mucho deseos de aportar al mundo del desarrallo.
+                </p1>
+                <div>
+                    <button>CV</button>
+                    <button>Portafolio</button>
+                </div>
+            </div>
+            <figure>
+                <img src="./img/paula__foto.jpg"
+                    alt="foto de paula" width="160px" />
+            </figure>
+        </article>
+
+        <section>
+            <h2>Experiencia</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Institución</th>
+                        <th>Curso</th>
+                        <th>Temas</th>
+                        <th>Período</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Tecsup</td>
+                        <td>Desarrollo web - BackEnd</td>
+                        <td>
+                            <ul>
+                                <li>Introducción al FrontEnd / Git y Github</li>
+                                <li>HTML5, CSS3, Javascript</li>
+                                <li>RWD</li>
+                                <li>SASS</li>
+                                <li>ECMAScript</li>
+                                <li>API REST</li>
+                                <li>Webpack</li>
+                                <li>React.js, Redux, Websocket</li>
+                                <li>TypeScript</li>
+                                <li>Angular</li>
+                                <li>RxJS y NgRX</li>
+                            </ul>
+                        </td>
+                        <td>Enero 2022 - Abril 2022</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Tecsup</td>
+                        <td>Desarrollo web - FrontEnd</td>
+                        <td>
+                            <ul>
+                                <li>Introducción al BackEnd</li>
+                                <li>Programación orientada objetos</li>
+                                <li>Django</li>
+                                <li>Flask</li>
+                                <li>SQLite</li>
+                                <li>Servicios Rest Ful</li>
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                                <li>Node.js</li>
+                                <li>Firebase</li>
+                                <li>MicroServicios</li>
+                                <li>Express.js</li>
+                                <li>Heroku y AWS</li>
+                            </ul>
+                        </td>
+                        <td>Abril 2022 - Junio 2022</td>
+                    </tr>
+                    </tbody>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <form action="/">
+                <h2>Contacto</h2>
+
+                <input type="text" placeholder="Nombre" name="nombre" required />
+                <hr>
+
+                <input type="text" placeholder="Apellido" name="apellido" required />
+                <hr>
+
+                <input type="email" placeholder="Correo" name="email" required />
+                <hr>
+                <input type="number" id="celular" placeholder="Celular" min="900000000" max="999999999" name="celular" required />
+                <hr>
+
+                <textarea placeholder="Mensaje" name="mensaje" cols="30" rows="10"></textarea>
+                <hr>
+
+                <label for="proyecto">Proyecto a realizar</label>
+                <select name="proyecto" id="proyecto">
+                    <option value="proyecto-empresarial">Proyecto empresarial</option>
+                    <option value="pagina-personal">Página personal</option>
+                    <option value="aplicacion">Aplicación</option>
+                    <option value="iot">IoT</option>
+                </select>
+                <hr />
+
+                <h3>PLAN</h3>
+                <input type="radio" name="plan" id="avanzado" value="avanzado" />
+                <label for="avanzado">Avanzado</label>
+                <input type="radio" name="plan" id="medio" value="medio" />
+                <label for="medio">Medio </label>
+                <input type="radio" name="plan" id="básico" value="básico" />
+                <label for="básico">Básico</label>
+                <p>Indique que Plan desea</p>
+                <hr />
+
+                <h4>Secciones adicionales</h4>
+                <input type="checkbox" name="adicionales" id="marketing">
+                <label for="marketing">Marketing</label>
+                <input type="checkbox" name="adicionales" id="design">
+                <label for="design">Diseño</label>
+                <input type="checkbox" name="adicionales" id="seo">
+                <label for="JavaScript">SEO</label>
+                <hr>
+
+                <button>A un clic de soñar</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
