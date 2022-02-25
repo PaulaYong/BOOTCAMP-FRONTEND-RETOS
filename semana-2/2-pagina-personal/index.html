@@ -99,56 +99,23 @@
             </div>
           </div>
       </section>
-      
-        <section>
-            <form action="/">
-                <h2>Contacto</h2>
 
-                <input type="text" placeholder="Nombre" name="nombre" required />
-                <hr>
-
-                <input type="text" placeholder="Apellido" name="apellido" required />
-                <hr>
-
-                <input type="email" placeholder="Correo" name="email" required />
-                <hr>
-                <input type="number" id="celular" placeholder="Celular" min="900000000" max="999999999" name="celular" required />
-                <hr>
-
-                <textarea placeholder="Mensaje" name="mensaje" cols="30" rows="10"></textarea>
-                <hr>
-
-                <label for="proyecto">Proyecto a realizar</label>
-                <select name="proyecto" id="proyecto">
-                    <option value="proyecto-empresarial">Proyecto empresarial</option>
-                    <option value="pagina-personal">Página personal</option>
-                    <option value="aplicacion">Aplicación</option>
-                    <option value="iot">IoT</option>
-                </select>
-                <hr />
-
-                <h3>PLAN</h3>
-                <input type="radio" name="plan" id="avanzado" value="avanzado" />
-                <label for="avanzado">Avanzado</label>
-                <input type="radio" name="plan" id="medio" value="medio" />
-                <label for="medio">Medio </label>
-                <input type="radio" name="plan" id="básico" value="básico" />
-                <label for="básico">Básico</label>
-                <p>Indique que Plan desea</p>
-                <hr />
-
-                <h4>Secciones adicionales</h4>
-                <input type="checkbox" name="adicionales" id="marketing">
-                <label for="marketing">Marketing</label>
-                <input type="checkbox" name="adicionales" id="design">
-                <label for="design">Diseño</label>
-                <input type="checkbox" name="adicionales" id="seo">
-                <label for="JavaScript">SEO</label>
-                <hr>
-
-                <button>A un clic de soñar</button>
-            </form>
-        </section>
+      <section class="contacto" id="contacto">
+        <div class="contacto-container">
+          <h2 class="contacto__tittle">Contacto</h2>
+          <form action="/" class="contacto__form">
+            <input type="text" placeholder="Nombres y Apellidos:" name="nombre" class="contacto__form-input" required
+              pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$"
+              title="No se aceptan caracteres especiales ni números" />
+            <input type="email" placeholder="Correo:" name="email" class="contacto__form-input" required />
+            <input type="number" id="celular:" placeholder="Celular" name="celular" class="contacto__form-input"
+              min="900000000" max="999999999" required />
+            <textarea placeholder="Mensaje:" name="mensaje" cols="30" rows="10" class="contacto__form-input"
+              required></textarea>
+            <button class="contacto__form-button">Enviar 📧</button>
+          </form>
+        </div>
+      </section>
     </main>
 
 </body>
