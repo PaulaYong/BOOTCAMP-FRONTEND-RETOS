@@ -14,8 +14,9 @@
 }
 
 .body {
+  background-color: var(--theme-color);
   margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
   
 .header {
