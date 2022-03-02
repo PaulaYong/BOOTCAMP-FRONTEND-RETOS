@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/pagina__personal-ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Primary Meta Tags -->
+<title>Paula Andrea Yong Zea.</title>
+<meta name="title" content="Paula Andrea Yong Zea. Desarrolladora Full Stack.">
+<meta name="description" content="Web personal donde se encuentra los datos relevantes del desarrollador.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://paulayong.github.io/BOOTCAMP-FRONTEND-RETOS/semana-2/2-pagina-personal/">
+<meta property="og:title" content="Paula Andrea Yong Zea. Desarrolladora Full Stack.">
+<meta property="og:description" content="Web personal donde se encuentra los datos relevantes del desarrollador.">
+<meta property="og:image" content="">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://paulayong.github.io/BOOTCAMP-FRONTEND-RETOS/semana-2/2-pagina-personal/">
+<meta property="twitter:title" content="Paula Andrea Yong Zea. Desarrolladora Full Stack.">
+<meta property="twitter:description" content="Web personal donde se encuentra los datos relevantes del desarrollador.">
+<meta property="twitter:image" content="">
+
+</head>
+
+<body class="body"> 
+    <header class="header">
+        <nav class="header-nav">
+            <a href="#" class="header-nav__link-logo-container">
+                <img src="./img/paula__foto-1.jpg" alt="foto Paula Yong" class="header-nav__link-logo"/>
+            </a>
+            <ul class="header-nav__link-list">
+                <li class="header-nav__link-item">
+                    <a href="#perfil" class="header-nav__link">Perfil</a>
+                </li>
+                <li class="header-nav__link-item">
+                    <a href="#experiencia" class="header-nav__link">Experiencia</a>
+                </li>
+                <li class="header-nav__link-item">
+                    <a href="#contacto" class="header-nav__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+    
+     <main class="main">
+        <article class="perfil" id="perfil">
+            <div class="perfil-container">
+                <div class="perfil__info">    
+                    <h1 class="perfil__info-title">Paula Andrea Yong Zea. Desarrolladora Full Stack.</h1>
+                    <p class="perfil__info-description">
+                        Estudiante de Frontend y Backend de Tecsup, con muchos deseos de aportar lo que he adquirido en mi aprendizaje al mundo del desarrallo.
+                    </p>
+                    <div class="perfil__info-link-container">
+                       <a href="#" class="perfil__info-link">CV</a>
+                       <a href="#" class="perfil__info-link">Portafolio</a>
+                    </div>
+                </div>
+
+                <div class="perfil__cover-image">
+                  <figure class="perfil__image-container">
+                    <img src="./img/paula__foto.jpg" alt="Foto Paula Yong" class="perfil__image"/>
+                  </figure>
+                </div>
+            </div>
+        </article>
+
+        <section class="experiencia" id="experiencia">
+          <div class="experiencia-container">
+            <h2 class="experiencia__title">Experiencia</h2>
+            <div class="experiencia__experiences">
+              <section class="experiencia__experience">
+                <h4 class="experiencia__date">Enero 2022 - Abril 2022</h4>
+                <h3 class="experiencia__company">Tecsup - Código</h3>
+                <h4 class="experiencia__course">Frontend</h4>
+                <ul class="experiencia__activities">
+                    <li class="experiencia__activity">Introducción al FrontEnd / Git y Github</li>
+                    <li class="experiencia__activity">HTML5, CSS3, Javascript</li>
+                    <li class="experiencia__activity">RWD</li>
+                    <li class="experiencia__activity">SASS</li>
+                    <li class="experiencia__activity">ECMAScript</li>
+                    <li class="experiencia__activity">API REST</li>
+                    <li class="experiencia__activity">Webpack</li>
+                    <li class="experiencia__activity">React.js, Redux, Websocket</li>
+                    <li class="experiencia__activity">TypeScript</li>
+                    <li class="experiencia__activity">Angular</li>
+                    <li class="experiencia__activity">RxJS y NgRX</li>
+                </ul>
+              </section>
+
+              <section class="experiencia__experience">
+                  <h4 class="experiencia__date">Abril 202 - Junio 2022</h4>
+                  <h3 class="experiencia__company">Tecsup - Cógigo</h3>
+                  <h4 class="experiencia__course">Backend</h4>
+                  <ul class="experiencia__activities">
+                      <li class="experiencia__activity">Introducción al BackEnd</li>
+                      <li class="experiencia__activity">Programación orientada objetos</li>
+                      <li class="experiencia__activity">Django</li>
+                      <li class="experiencia__activity">Flask</li>
+                      <li class="experiencia__activity">SQLite</li>
+                      <li class="experiencia__activity">Servicios Rest Ful</li>
+                      <li class="experiencia__activity">MySQL</li>
+                      <li class="experiencia__activity">MongoDB</li>
+                      <li class="experiencia__activity">Node.js</li>
+                      <li class="experiencia__activity">Firebase</li>
+                      <li class="experiencia__activity">MicroServicios</li>
+                      <li class="experiencia__activity">Express.js</li>
+                      <li class="experiencia__activity">Heroku y AWS</li>
+                  </ul>
+                </section>
+            </div>
+          </div>
+      </section>
+
+      <section class="contacto" id="contacto">
+        <div class="contacto-container">
+          <h2 class="contacto__tittle">Contacto</h2>
+          <form action="/" class="contacto__form">
+            <input type="text" placeholder="Nombres y Apellidos:" name="nombre" class="contacto__form-input" required
+              pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$"
+              title="No se aceptan caracteres especiales ni números" />
+            <input type="email" placeholder="Correo:" name="email" class="contacto__form-input" required />
+            <input type="number" id="celular:" placeholder="Celular" name="celular" class="contacto__form-input"
+              min="900000000" max="999999999" required />
+            <textarea placeholder="Mensaje:" name="mensaje" cols="30" rows="10" class="contacto__form-input"
+              required></textarea>
+            <button class="contacto__form-button">Enviar 📧</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div class="wave-separator"></div>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul class="footer-nav__link-list">
+          <li class="footer-nav__link-item">
+              <a href="https://www.linkedin.com/in/paula-andrea-yong-zea-01a130227/?originalSubdomain=pe"class="footer-nav__link">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"
+                class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://web.facebook.com/andrea.yongzea.5" class="footer-nav__link">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"
+                class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://github.com/PaulaYong" class="footer-nav__link">
+              <img src="https://image.flaticon.com/icons/png/512/733/733553.png" alt="GitHub"
+                class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://www.youtube.com/channel/UCJu4wLpPoRQW07TA0VySxCw" class="footer-nav__link">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="YouTube"
+                class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://api.whatsapp.com/send?phone=933997839&text=Hola%20Andrea,%20deseo%20comunicarme%20contigo." class="footer-nav__link">
+              <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="whatsapp"
+                class="footer-nav__link-image" />
+            </a>
+          </li>
+        </ul>
+        <h2 class="footer-nav__credits">
+          Copyright &copy; 2022
+          <a href="#perfil" class="footer-nav__credits-author">Paula Yong Zea.
+          </a>
+          Todos los derechos son reservados.
+        </h2>
+      </nav>
+  </footer>
+</body>
+
+</html>
