@@ -21,12 +21,15 @@
   
 .header-nav,
 .perfil-container,
-.experiencia-container {
+.experiencia-container,
+.projects-container {
   padding: 0 2rem;
 }
 
 .header-nav__link-list,
-.experiencia-container{
+.experiencia-container,
+.projects-container,
+.projects__projects{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -227,6 +230,115 @@
   list-style: square;
 }
 
+.projects {
+  padding: 2rem 0;
+}
+
+.projects-container {
+  gap: 2rem;
+}
+
+.projects__title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.projects__projects {
+  gap: 2rem;
+}
+
+.projects__project {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 0.1rem solid var(--box-shadow);
+  border-radius: 1rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.projects__project:hover {
+  box-shadow:
+    0 0 0.5rem var(--highlight-color-4),
+    0 0 1rem var(--highlight-color-1),
+    0 0 1.5rem var(--highlight-color-3);
+  transform: scale(1.05);
+}
+
+.projects__project-image-container {
+  display: flex;
+  margin: 0%;
+  width: auto;
+  justify-content: center;
+  padding: 0.2rem;
+}
+
+.projects__project-image {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.projects__project-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.projects__project-data-title {
+  color: var(--code-color);
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.projects__project-data-number-reto {
+  color: var(--highlight-color-1);
+  font-weight: 400;
+  margin: 0;
+}
+
+.projects__project-data-technologies {
+  color: var(--box-shadow);
+  font-weight: 300;
+  margin: 0;
+}
+
+.projects__project-data-about {
+  font-weight: 200;
+  margin: 0;
+}
+.projects__project-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.projects__project-button {
+  text-decoration: none;
+  font-weight: 700;
+  background-color: var(--highlight-color-1);
+  border: 0.1rem solid var(--highlight-color-1);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--highlight-color-4);
+  transition: all 0.5s;
+}
+
+.projects__project-button--bg-purple{
+  background-color: var(--highlight-color-4);
+  border: 0.1rem solid  var(--highlight-color-4);
+  color:var(--inverse-text-color);
+}
+
+.projects__project-button:hover {
+  border: 0.1rem solid var(--inverse-theme-color);
+  background-color: var(--inverse-text-color);
+  color: var(--inverse-theme-color)
+}
+
 .contacto {
   text-align: center;
   padding: 2rem 0;
@@ -358,7 +470,8 @@
 
   .header-nav,
   .perfil-container,
-  .experiencia-container {
+  .experiencia-container,
+  .projects-container{
     max-width: 1024px;
     margin: auto;
     padding: 0;
@@ -415,4 +528,15 @@
     max-width: 18rem;
     border: 0.25rem solid var(--inverse-theme-color);
   }
+
+  .projects-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .projects__projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }
