@@ -1,6 +1,18 @@
 :root {
   scroll-behavior: smooth;
+  --theme-color: #fff;
+  --text-color: #000;
+  --highlight-color-1: #61dafb;
+  --highlight-color-2: #ffd700;
+  --highlight-color-3: #e83e8c;
+  --highlight-color-4: #422e58 ;
+  --box-shadow: #21242c80;
+  --code-color: #282c34;
+  --button-color: #61dafb;
+  --inverse-theme-color: #20232a;
+  --inverse-text-color: #fff;
 }
+
 .body {
   margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
