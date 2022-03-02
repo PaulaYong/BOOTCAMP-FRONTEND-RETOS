@@ -102,6 +102,10 @@
   border-bottom: 0.25rem solid var(--highlight-color-2);
 }
 
+.main {
+  width: 100%;
+}
+
 .perfil {
   text-align: center;
   padding: 2rem 0;
