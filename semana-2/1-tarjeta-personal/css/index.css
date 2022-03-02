@@ -15,7 +15,7 @@
     background-color: rgba(87, 55, 116, 0.719);
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.3rem;
     max-width: 22.5rem;
     margin: auto;
     padding: 1rem 2rem;
@@ -28,7 +28,7 @@
 
 .header__professional-imagen-container{
     display: flex;
-    max-width: 170px;
+    max-width: 150px;
     margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .article__title {
-    font-size: 1.75rem;
+    font-size: 1.4rem;
 }
 
 .article__keywords {
@@ -61,7 +61,7 @@
 }
 
 .article__presentation{
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .skills {
@@ -70,6 +70,9 @@
     gap: 8px;
 }
 
+.skills__title{ 
+    font-size: 1.2rem;
+}
 .skills__title::before {
     content: '📚' ;
 }
@@ -130,6 +133,7 @@
     display: flex;
     width: 2rem;
     transition: 0.25s all;
+  
 }
   
 .footer-nav__link:hover {
