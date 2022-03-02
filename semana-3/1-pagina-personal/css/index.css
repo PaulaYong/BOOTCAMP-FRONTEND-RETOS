@@ -22,7 +22,8 @@
 .header-nav,
 .perfil-container,
 .experiencia-container,
-.projects-container {
+.projects-container,
+.contacto-container{
   padding: 0 2rem;
 }
 
@@ -343,7 +344,7 @@
   text-align: center;
   padding: 2rem 0;
 }
-  
+
 .contacto-container {
   display: flex;
   flex-direction: column;
@@ -352,55 +353,59 @@
   max-width: 1024px;
   margin: auto;
   border-radius: 20px 0px 20px 0px;
-  border: 0.1rem solid #20232a;
+  border: 0.1rem solid var(--box-shadow);
   background-image: url(https://wallpaperbat.com/img/641236-react-native-wallpaper.png);
+  box-shadow:
+  0 0 0.5rem var(--highlight-color-4),
+  0 0 1rem var(--highlight-color-1),
+  0 0 1.5rem var(--highlight-color-3);
 }
-  
+
 .contacto__tittle {
   margin: 0;
   font-size: 2rem;
-  color: #fff;
+  color: var(--inverse-text-color);
 }
-  
+
 .contacto__form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-  
+
 .contacto__form-input {
-  border: 0.1rem solid #282c34;
+  border: 0.1rem solid var(--inverse-theme-color);
   border-radius: 0.5rem;
   padding: 0.75rem;
   outline: none;
   transition: all 0.5s;
 }
-  
+
 .contacto__form-input:invalid {
-  box-shadow: 0 0 0.5rem 0 #e83e8c;
+  box-shadow: 0 0 0.5rem 0 var(--highlight-color-3);
 }
-  
+
 .contacto__form-input:focus {
-    border: 0.1em solid #0ee2e2;
+  border: 0.1em solid var(--highlight-color-1);
 }
-  
+
 .contacto__form-input::placeholder {
-    color: #3f3c3d;
+  color: var(--inverse-theme-color);
 }
-  
+
 .contacto__form-button {
   align-self: center;
-  background-color: #61dafb;
-  border: 0.1rem solid #61dafb;
+  background-color: var(--button-color);
+  border: 0.1rem solid var(--button-color);
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  color: #20232a;
+  color: var(--inverse-theme-color);
   transition: all 0.5s;
 }
-  
+
 .contacto__form-button:hover {
-  border: 0.1rem solid #20232a;
-  background-color: #fff; 
+  border: 0.1rem solid var(--inverse-theme-color);
+  background-color: var(--inverse-text-color);
 }
 
 .footer {
