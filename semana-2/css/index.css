@@ -49,3 +49,97 @@
     justify-content: space-around;
 }
 
+.projects {
+    padding: 2rem 0;  
+}
+  
+.projects__project {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 0.1rem solid var(--box-shadow);
+    border-radius: 1rem;
+    padding: 4rem;
+    overflow: hidden;
+    transition: all 0.5s;
+    background-color: var(--theme-color);
+}
+  
+.projects__project:hover {
+    box-shadow:
+      0 0 0.5rem var(--highlight-color-3),
+      0 0 1rem var(--highlight-color-1),
+      0 0 1.5rem var(--highlight-color-2);
+    transform: scale(1.05);
+}
+
+.projects__project-image-container {
+    display: flex;
+    margin: 0%;
+    width: auto;
+    justify-content: center;
+    padding: 0.2rem;
+}
+  
+.projects__project-image {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.projects__project-data {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+  
+.projects__project-data-title {
+    color: var(--highlight-color-4);
+    margin: 0;
+    font-weight: 700;
+    font-size: 2rem;
+}
+  
+.projects__project-data-reto {
+    color: var(--highlight-color-1);
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin: 0;
+}
+  
+.projects__project-data-technologies {
+    color: var(--inverse-theme-color);
+    font-weight: 400;
+    margin: 0;
+}
+
+.projects__project-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+  
+.projects__project-button {
+    text-decoration: none;
+    font-weight: 700;
+    background-color: var(--highlight-color-1);
+    border: 0.1rem solid var(--highlight-color-1);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--highlight-color-4);
+    transition: all 0.5s;
+}
+  
+.projects__project-button--bg-purple{
+    background-color: var(--highlight-color-3);
+    border: 0.1rem solid  var(--highlight-color-3);
+    color:var(--inverse-text-color);
+}
+  
+.projects__project-button:hover {
+    border: 0.1rem solid var(--inverse-theme-color);
+    background-color: var(--inverse-text-color);
+    color: var(--inverse-theme-color);
+}
