@@ -324,3 +324,82 @@ body{
     font-weight: 600;
     color: var(--text-color-inverse);
 }
+
+/* contacto */
+
+footer{
+    background: linear-gradient(-225deg, #91cfb3de 0%, #f167807c 100%);
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+
+    /* justificar-contenido: espacio-entre */
+    justify-content: space-between;
+
+    align-items: center;
+
+    /* envoltura flexible: envoltura */
+    flex-wrap: wrap;
+
+    /* superior */
+    padding-top: 60px;
+
+    /* inferior */
+    padding-bottom: 70px;
+    ;
+}
+
+.contact-us{
+    width: 50%;
+    color: var(--theme-color);
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+/* hermano adyacente de brand */
+.brand+p{
+    font-weight: 500;
+}
+
+/* caja contenedor de cada icono */
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* bordes iconos */
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--theme-color);
+    border-radius: 10%;
+    text-align: center;
+
+    /* color del contenido */
+    color: var(--theme-color);
+}
+
+.contact-us__credits-author {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+/* icono  */
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.social-media-icon:hover{
+    background: var(--theme-color);
+    color: #91cfb3de;
+}
