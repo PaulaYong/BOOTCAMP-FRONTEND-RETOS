@@ -197,3 +197,47 @@ body{
     color: var(--theme-color);
     font-weight: 700;
 }
+
+/* galeria */
+
+.gallery{
+    background: linear-gradient(-225deg, rgba(183, 248, 219, 0.267) 0%, rgba(80, 167, 194, 0.267) 100%);
+}
+
+.contenedor-galeria{
+    display: flex;
+
+     /* poner al siguiente el contenido
+    envoltura flexible: envoltura */
+    flex-wrap: wrap;
+
+      /* reparte equitativamente el espacio
+    justificar-contenido: espacio uniformemente */
+    justify-content: space-evenly;
+
+    /* margen superior: 30px; */
+    margin-top: 30px;
+}
+
+
+.img-galeria{
+    /* ajuste de objeto: cubierta */
+    object-fit: cover;
+
+    width: 30%;
+    height: 29rem;
+
+    /* imagen en bloque */
+    display: block;
+
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
+    cursor: pointer;
+   
+}
+
+
+.img-galeria:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+}
