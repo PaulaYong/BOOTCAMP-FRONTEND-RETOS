@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    scroll-behavior: smooth;
+    --highlight-color-1: #61dafb;
+    --highlight-color-2: #e83e8c;
+    --highlight-color-3: #422e58 ;
+    --inverse-theme-color: #20232a;
+    --inverse-text-color: #fff;
+    --box-shadow: #21242c80;
+    --theme-color: #ffffff77;
+}
