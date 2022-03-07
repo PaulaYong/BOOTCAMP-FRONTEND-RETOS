@@ -143,3 +143,18 @@
     background-color: var(--inverse-text-color);
     color: var(--inverse-theme-color);
 }
+
+@keyframes fanimado {
+
+    0% {
+        background-position: 0% 50%;
+    }
+    
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
