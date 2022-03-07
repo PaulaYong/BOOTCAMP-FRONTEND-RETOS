@@ -1,26 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reto 3</title>
-    <link rel="shortcut icon" href="img/Htlm__Css-icon.png" type="image/x-icon">
-    
-</head>
-<body>
-    <main>
-        <h1>Bootcamp Frontend - Semana 3</h1>
-        <nav>
-            <h2>Proyectos</h2>
-            <ul>
-                <li>
-                    <a href="./1-pagina-personal/">Página Personal</a>
-                </li>
-            </ul>
-        </nav>
+<html lang="es">
 
-    </main>
-   
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/pagina__personal-ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+
+<!-- Primary Meta Tags -->
+<title>Paula Andrea Yong Zea.</title>
+<meta name="title" content="Paula Andrea Yong Zea. Página Personal.">
+<meta name="description" content="Página Personal que muestra información relevante del desarrollador. Página responsiva; maquetada con CSS, HTML, Normalize.css, Animate.css, Google Fonts.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://paulayong.github.io/BOOTCAMP-FRONTEND-RETOS/semana-3/">
+<meta property="og:title" content="Paula Andrea Yong Zea. Página Personal.">
+<meta property="og:description" content="Página Personal que muestra información relevante del desarrollador. Página responsiva; maquetada con CSS, HTML, Normalize.css, Animate.css, Google Fonts.">
+<meta property="og:image" content="">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://paulayong.github.io/BOOTCAMP-FRONTEND-RETOS/semana-3/">
+<meta property="twitter:title" content="Paula Andrea Yong Zea. Página Personal.">
+<meta property="twitter:description" content="Página Personal que muestra información relevante del desarrollador. Página responsiva; maquetada con CSS, HTML, Normalize.css, Animate.css, Google Fonts.">
+<meta property="twitter:image" content="">
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body class="body">
+  
+  <header class="header">
+    <nav class="header-nav">
+        <a href="#" class="header-nav__link-logo-container">
+          <img src="./img/paula__foto-1.jpg" alt="foto Paula Yong" class="header-nav__link-logo"/>
+        </a>
+        <label for="menu" class="header-nav__menu-icon-container">
+          <img src="./img/button-menu-coin-1.png" alt="Ícono Menú" class="header-nav__menu-icon" />
+        </label>
+        <input type="checkbox" name="menu" id="menu" class="header-nav__menu-checkbox" />
+        <ul class="header-nav__link-list">
+          <li class="header-nav__link-item">
+            <a href="#perfil" class="header-nav__link">Perfil</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#experiencia" class="header-nav__link">Experiencia</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#projects" class="header-nav__link">Proyectos</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#contacto" class="header-nav__link">Contacto</a>
+          </li>
+        </ul>
+    </nav>
+  </header>
+  
+  <main class="main">
+
+    <article class="perfil" id="perfil">
+      <div class="perfil-container">
+        <div class="perfil__info animate__animated  animate__fadeInLeft">    
+          <h1 class="perfil__info-title">Paula Andrea Yong Zea Desarrolladora Full Stack</h1>
+          <p class="perfil__info-description">Estudiante de Frontend y Backend de Tecsup, con muchos deseos de aportar lo que he adquirido en mi aprendizaje al mundo del desarrallo.</p>
+          <div class="perfil__info-link-container">
+            <a href="#" class="perfil__info-link">CV</a>
+            <a href="#" class="perfil__info-link">Portafolio</a>
+          </div>
+        </div>
+        
+        <div class="perfil__cover-image  animate__animated  animate__fadeInRight">
+          <figure class="perfil__image-container">
+            <img src="./img/paula__foto.jpg" alt="Foto Paula Yong" class="perfil__image"/>
+          </figure>
+        </div>
+      </div>
+    </article>
+  
+    <section class="experiencia animate__animated  animate__fadeInUp" id="experiencia">
+      <div class="experiencia-container">
+        <h2 class="experiencia__title">Experiencia</h2>
+        <div class="experiencia__experiences">
+
+          <section class="experiencia__experience">
+            <h4 class="experiencia__date">Enero 2022 - Abril 2022</h4>
+            <h3 class="experiencia__company">Tecsup - Código</h3>
+            <h4 class="experiencia__course">Frontend</h4>
+            <ul class="experiencia__activities">
+              <li class="experiencia__activity">Introducción al FrontEnd / Git y Github</li>
+              <li class="experiencia__activity">HTML5, CSS3, Javascript</li>
+              <li class="experiencia__activity">RWD</li>
+              <li class="experiencia__activity">SASS</li>
+              <li class="experiencia__activity">ECMAScript</li>
+              <li class="experiencia__activity">API REST</li>
+              <li class="experiencia__activity">Webpack</li>
+              <li class="experiencia__activity">React.js, Redux, Websocket</li>
+              <li class="experiencia__activity">TypeScript</li>
+              <li class="experiencia__activity">Angular</li>
+              <li class="experiencia__activity">RxJS y NgRX</li>
+            </ul>
+          </section>
+  
+          <section class="experiencia__experience">
+            <h4 class="experiencia__date">Abril 202 - Junio 2022</h4>
+            <h3 class="experiencia__company">Tecsup - Cógigo</h3>
+            <h4 class="experiencia__course">Backend</h4>
+            <ul class="experiencia__activities">
+              <li class="experiencia__activity">Introducción al BackEnd</li>
+              <li class="experiencia__activity">Programación orientada objetos</li>
+              <li class="experiencia__activity">Django</li>
+              <li class="experiencia__activity">Flask</li>
+              <li class="experiencia__activity">SQLite</li>
+              <li class="experiencia__activity">Servicios Rest Ful</li>
+              <li class="experiencia__activity">MySQL</li>
+              <li class="experiencia__activity">MongoDB</li>
+              <li class="experiencia__activity">Node.js</li>
+              <li class="experiencia__activity">Firebase</li>
+              <li class="experiencia__activity">MicroServicios</li>
+              <li class="experiencia__activity">Express.js</li>
+              <li class="experiencia__activity">Heroku y AWS</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+  
+    <section class="projects" id="projects">
+      <div class="projects-container">
+        <h2 class="projects__title">Proyectos</h2>
+        <div class="projects__projects">
+          
+          <article class="projects__project">
+            <figure class="projects__project-image-container">
+              <img src="./img/HTML__imagen.jpg" alt="Miniatura de proyecto" class="projects__project-image" />
+            </figure>
+            <div class="projects__project-data">
+              <h2 class="projects__project-data-title">PÁGINA Y TARJETA PERSONAL</h2>
+              <h3 class="projects__project-data-number-reto">Reto 1</h3>
+              <h4 class="projects__project-data-technologies">Tecnologías: HTML</h4>
+              <p class="projects__project-data-about">
+                  Desarrollo de estructura HTML, aplicando lo aprendido de la semana 1 para el desarrollo de una Tarjeta Personal y Página Personal.
+              </p>
+            </div>
+            <div class="projects__project-button-container">
+              <a href="https://paulayong.github.io/BOOTCAMP-FRONTEND-RETOS/semana-1/" class="projects__project-button projects__project-button--bg-purple">Demo</a>
+              <a href="https://github.com/PaulaYong/BOOTCAMP-FRONTEND-RETOS/tree/develop/semana-1" class="projects__project-button">Código</a>
+            </div>
+          </article>
+  
+          <article class="projects__project">
+            <figure class="projects__project-image-container">
+              <img src="./img/Tarjeta__Personal.png" alt="Miniatura de proyecto" class="projects__project-image" />
+            </figure>
+            <div class="projects__project-data">
+              <h2 class="projects__project-data-title">TARJETA PERSONAL</h2>
+              <h3 class="projects__project-data-number-reto">Reto 2</h3>
+              <h4 class="projects__project-data-technologies">Tecnologías: HTML y CSS</h4>
+              <p class="projects__project-data-about">
+                Tarjeta Personal responsiva que detalla los datos del desarrollador, donde se aplica el diseño con CSS, lo aprendido de la semana 2.
+              </p>
+            </div>
+            <div class="projects__project-button-container">
+              <a href="https://paulayong.github.io/BOOTCAMP-FRONTEND-RETOS/semana-2/1-tarjeta-personal/" class="projects__project-button projects__project-button--bg-purple">Demo</a>
+              <a href="https://github.com/PaulaYong/BOOTCAMP-FRONTEND-RETOS/tree/develop/semana-2/1-tarjeta-personal" class="projects__project-button">Código</a>
+            </div>
+          </article>
+  
+          <article class="projects__project">
+            <figure class="projects__project-image-container">
+              <img src="./img/Página__Personal.png" alt="Miniatura de proyecto" class="projects__project-image" />
+            </figure>
+            <div class="projects__project-data">
+              <h2 class="projects__project-data-title">PÁGINA PERSONAL</h2>
+              <h3 class="projects__project-data-number-reto">Reto 2</h3>
+              <h4 class="projects__project-data-technologies">Tecnologías: HTML y CSS</h4>
+              <p class="projects__project-data-about">
+                  Página Personal responsiva que detalla los datos del desarrollador, donde se aplica el diseño con CSS, lo aprendido de la semana 2.
+              </p>
+            </div>
+            <div class="projects__project-button-container">
+              <a href="https://paulayong.github.io/BOOTCAMP-FRONTEND-RETOS/semana-2/2-pagina-personal/" class="projects__project-button projects__project-button--bg-purple">Demo</a>
+              <a href="https://github.com/PaulaYong/BOOTCAMP-FRONTEND-RETOS/tree/develop/semana-2/2-pagina-personal" class="projects__project-button">Código</a>
+            </div>
+          </article>
+  
+        </div>
+      </div>
+    </section>
+  
+    <section class="contacto" id="contacto">
+      <div class="contacto-container">
+          <h2 class="contacto__tittle">Contacto</h2>
+          <form action="/" class="contacto__form">
+              <input type="text" placeholder="Nombres y Apellidos:" name="nombre" class="contacto__form-input" required
+              pattern="^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$"
+              title="No se aceptan caracteres especiales ni números" />
+              <input type="email" placeholder="Correo:" name="email" class="contacto__form-input" required />
+              <input type="number" id="celular:" placeholder="Celular" name="celular" class="contacto__form-input"
+              min="900000000" max="999999999" required />
+              <textarea placeholder="Mensaje:" name="mensaje" cols="30" rows="10" class="contacto__form-input"
+              required></textarea>
+              <button class="contacto__form-button">Enviar 📧</button>
+          </form>
+      </div>
+    </section>
+  
+  </main>
+
+  <div class="wave-separator"></div>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul class="footer-nav__link-list">
+          <li class="footer-nav__link-item">
+              <a href="https://www.linkedin.com/in/paula-andrea-yong-zea-01a130227/?originalSubdomain=pe"class="footer-nav__link">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"
+                class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://web.facebook.com/andrea.yongzea.5" class="footer-nav__link">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"
+                class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://github.com/PaulaYong" class="footer-nav__link">
+              <img src="https://image.flaticon.com/icons/png/512/733/733553.png" alt="GitHub"
+                class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://www.youtube.com/channel/UCJu4wLpPoRQW07TA0VySxCw" class="footer-nav__link">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" alt="YouTube"
+                class="footer-nav__link-image" />
+            </a>
+          </li>
+          <li class="footer-nav__link-item">
+            <a href="https://api.whatsapp.com/send?phone=933997839&text=Hola%20Andrea,%20deseo%20comunicarme%20contigo." class="footer-nav__link">
+              <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="whatsapp"
+                class="footer-nav__link-image" />
+            </a>
+          </li>
+        </ul>
+        <h2 class="footer-nav__credits">
+          Copyright &copy; 2022
+          <a href="#perfil" class="footer-nav__credits-author">Paula Yong Zea.
+          </a>
+          Todos los derechos son reservados.
+        </h2>
+      </nav>
+  </footer>
 </body>
+
 </html>
