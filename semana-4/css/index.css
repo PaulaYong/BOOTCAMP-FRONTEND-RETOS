@@ -123,3 +123,77 @@ body{
 
     text-decoration: none;
 }
+
+/* servicio */
+
+.contenedor-servicio{
+    /* pantalla: flexible */
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    /* reparte equitativamente el espacio
+    justificar-contenido: espacio uniformemente */
+    justify-content: space-evenly;
+
+    /* alinear elementos: centro */
+    align-items: center;
+
+    /* poner al siguiente el contenido
+    envoltura flexible: envoltura */
+    flex-wrap: wrap;
+}
+
+/* espacio que ocupa dentro de contenedor-servicio */
+.contenedor-servicio img{
+    width: 40%;
+}
+
+/* espacio que ocupa dentro de contenedor-servicio */
+.checklist-servicio{
+    width: 45%;
+}
+
+.service{
+    /* margen inferior: 20px */
+    margin-bottom: 20px;
+}
+
+.icon-service{
+    margin-bottom: 7px;
+    color: var(--text-color-inverse);
+}
+
+
+.servicio-about { 
+    font-weight: 400;
+    padding: 1.5rem 0;
+    font-size: 1.05rem;
+    text-align: justify;
+    font-weight: 300;
+}
+
+
+.number{
+
+    /* pantalla: bloque en línea */
+    display: inline-block;
+
+    background-image: linear-gradient(-225deg, #91cfb3de 0%, #f167807c 100%);
+    
+    /* centrado el contenido con respeco a la altura
+    altura de la línea: */
+    line-height: 35px;
+
+    /* centrado el contenido con respeco al ancho */
+    text-align: center;
+
+    /* margen entre contenido */
+    margin-right: 5px;
+
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: var(--theme-color);
+    font-weight: 700;
+}
