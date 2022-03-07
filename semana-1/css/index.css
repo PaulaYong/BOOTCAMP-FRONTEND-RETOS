@@ -14,3 +14,37 @@
     --box-shadow: #21242c80;
     --theme-color: #ffffff77;
 }
+
+.body {
+    background-image: linear-gradient(135deg, #0087D4, #505488,#2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
+    background-size: 500%;
+    animation: fanimado 10s infinite; 
+}
+
+.header{
+    /* 100% de la pantalla */
+    height: 100vh;
+
+    background-image: url(../img/HTML_Flatline.svg);
+
+    /* repetición de fondo */
+    background-repeat: no-repeat;
+
+    /* tamaño de fondo: portada */
+    background-size: cover;
+
+    /* archivo adjunto de fondo: fijo */
+    background-attachment: fixed;
+
+    /* posición de fondo: centro */
+    background-position: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    /* justificar-contenido: espacio-entre */
+    justify-content: space-around;
+}
