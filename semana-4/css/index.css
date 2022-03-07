@@ -1,0 +1,45 @@
+/* PAULA TU PUEDES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT: Útil para declarar variables CSS globales */
+:root{
+    /* comportamiento de desplazamiento: suave */
+    scroll-behavior: smooth;
+
+    --text-color: #f16781;
+    --text-color-inverse: #91cfb3;
+    --theme-color: #fff;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Contenedores de Quines somos, Portafolio, Acerca de y Contacto */
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+
+ /* regular la visiblidad de los contenidos
+    Desbordamiento: oculta */
+    overflow: hidden;
+
+    margin: auto;
+
+    /* separación de los contenedores */
+    padding: 60px 0;
+}
+
+.subtitulo{
+    color: var(--text-color);
+    font-size: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
